@@ -8,7 +8,7 @@
 </head>
 <body class="Abody">
 	<div class="Aheader">
-	<h2>Admin Login</h2>
+	<h2>Admin </h2>
 </div>
 
 <form method="post" action="login3.php" class="Aform">
@@ -34,8 +34,8 @@
 		<button type="submit" name="Login3" class="btnA"> Login</button>
 	</div>
 
-	
-	
+
+
 
 
 
