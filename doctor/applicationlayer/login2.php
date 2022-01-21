@@ -8,7 +8,7 @@
 </head>
 <body class="Dbody">
 	<div class="Dheader">
-	<h2>Doctor Login</h2>
+	<h2>DoctorLogin</h2>
 </div>
 
 <form method="post" action="login2.php" class="Dform">
