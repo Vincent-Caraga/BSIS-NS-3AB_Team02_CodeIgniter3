@@ -1,4 +1,3 @@
-
 body,html{
 	margin: 0;
 	padding: 0;
@@ -69,11 +68,6 @@ body{
 
 }
 
-
-
-
-
-
 *{
 	margin: 0px;
 	padding: 0px;
@@ -81,16 +75,20 @@ body{
 
 }
 .Dbody{
+
 	font-size: 120%;
-	background: #423289;
+
+
+	background: #76d6ce;
 
 }
 
 .Dheader{
 	width: 30%;
+
 	margin: 50px auto 0px;
 	color: white;
-	background: #423289;
+	background: #c74b1f;
 	text-align: center;
 	border: 1px solid #B0C4DE;
 	border-bottom: none;
@@ -158,7 +156,7 @@ body{
 	background: #f2dede;
 	border-radius: 5px;
 	text-align: left;
-	
+
 }
 
 
@@ -219,17 +217,17 @@ tr:nth-child(even){
 }
 .my1{
 
-	
+
 	color: #423289;
-	
-	
-	
-	
+
+
+
+
 }
 
 
 .my1{
-	
+
 	float: left;
 	width: 25%;
 	margin-left: 34%;
@@ -348,7 +346,7 @@ font-size: 40px;
 	background: #f2dede;
 	border-radius: 5px;
 	text-align: left;
-	
+
 }
 
 .table3{
