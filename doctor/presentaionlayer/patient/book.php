@@ -11,13 +11,13 @@
 <header>
 	<h1>Doctor<span>Patient</span></h1>
 		<nav>
-		
 
 
-		
-		<ul> 
-			
-		
+
+
+		<ul>
+
+
 			<li><a href=" index.php">MyInfo</a></li>
 			<li><a href=" book.php">Book Appointment</a></li>
 			<li><a href="view.php">View Appointment</a></li>
@@ -26,15 +26,15 @@
 			<li><a href="donate.php">Donate Organ</a></li>
 			<li><a href="searchdonor.php">Search Donar</a></li>
 			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
-			
 
 
 
-	
-			
+
+
+
 
 		</ul>
-		
+
 
 
 
@@ -48,9 +48,9 @@
 <body>
 
 
-	
 
-	
+
+
 
 
 	<div class="header">
@@ -71,11 +71,11 @@
 			<div class="input-group">
 		<label>Categery</label>
 	   	<select name="categorey" class="xd">
-	   		<option value="bone" >bone</option>
-	   		<option value="heart">heart</option>
-	   		<option value="Dentistry">Dentistry</option>
-	   		<option value="MentalHealth">Mental Health</option>
-	   		<option value="Surgery">Surgery</option>
+	   		<option value="bone" >General Medicine</option>
+	   		<option value="heart">Pediatrics</option>
+	   		<option value="Dentistry">ENT</option>
+	   		<option value="MentalHealth">Internal Medicine</option>
+	   		<option value="Surgery">Ophthalmology</option>
 
 	   	</select>
 
@@ -100,32 +100,32 @@
 
 
 
-	<?php  
+	<?php
 
 	  if (isset($_POST['Search'])) {
 
 	$categorey = mysqli_real_escape_string($mysqli,$_POST['categorey']);
-	
+
 	$query2="SELECT * FROM doctor WHERE categorey=('$categorey')";
 	$result2=mysqli_query($mysqli,$query2);
 	?>
-	
-		<div class="input-group"> 
+
+		<div class="input-group">
 
 			<label>Doctor ID</label>
-			
+
 
 		<select class="input-group2" name="docID">
-			
+
 	<?php   while ($row2=mysqli_fetch_assoc($result2)) {
 		?>
-		
-	 
+
+
 		<option> <?php echo $row2['DoctorID'] ?> </option>
-		
-	   
-	  
-	   <?php 
+
+
+
+	   <?php
 
 	} ?>
 	 </select>
@@ -155,8 +155,8 @@
 	 <div class="input-group">
 			<button type="submit" name="Book" class="btn">BOOK</button>
 			</div>
-	 
-	 <?php  
+
+	 <?php
 }
 
 
