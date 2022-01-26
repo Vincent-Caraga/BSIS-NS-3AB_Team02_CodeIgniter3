@@ -9,30 +9,30 @@
 </head>
 
 <header>
-	<h1>Doctor<span>Patient</span></h1>
+	<h1>Doctor<span> Tab</span></h1>
 		<nav>
-		
 
 
-		
-		<ul> 
-			
-		
+
+
+		<ul>
+
+
 			<li><a href="index2.php">My Info</a></li>
 			<li><a href="doctorapp.php">My Appointments</a></li>
 			<li><a href="searchpatient.php">Search Patient</a></li>
 			<li><a href="add.php">Add Description</a></li>
 			<li><a href="../../applicationlayer/Doctorpatient.php">Logout</a></li>
 
-			
 
 
 
-	
-			
+
+
+
 
 		</ul>
-		
+
 
 
 
@@ -79,19 +79,19 @@
 
 
 
-	<?php  
+	<?php
 
 
 	  if (isset($_POST['SearchPA'])) {
 
 	$Patientsearch = mysqli_real_escape_string($mysqli,$_POST['Patientsearch']);
-	
+
 	$query="SELECT * FROM patients WHERE UserID=('$Patientsearch')";
 	$result2=mysqli_query($mysqli,$query);
-	
 
-	
-		
+
+
+
 	while ($row2=mysqli_fetch_assoc($result2)) {
 ?>
 
@@ -126,22 +126,22 @@
 			</div>
 
 
-	<?php  
+	<?php
 
 	}
 	 ?>
 
 			 </div>
-	 
-		
-	   
-	  
-	 
 
-	 
-	
-	  
-<?php 
+
+
+
+
+
+
+
+
+<?php
 }
 
 
@@ -150,7 +150,7 @@
 
 
 
-	    <?php  
+	    <?php
 
 
 if (isset($_POST['AddD'])) {
@@ -162,8 +162,8 @@ if (isset($_POST['AddD'])) {
 	$treatment 			= $mysqli -> real_escape_string($_POST['Treatment']);
 	$note				= $mysqli -> real_escape_string($_POST['Note']);
 
-	
-	
+
+
 
 
 
@@ -196,9 +196,9 @@ if(count($errors)==0){
 	if ($mysqli -> query($sql7)) { ?>
 
 	<h2 class="thanks"> <?php printf("Your Description Is Added",$mysqli->affected_rows);?></h2>
-			
-			
-		<?php 
+
+
+		<?php
 
 
 
